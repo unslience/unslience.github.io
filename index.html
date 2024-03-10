@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>今天你AC了吗？</title>
+<script>
+    function loadScript(url, callback) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+
+        script.onload = callback;
+        script.onerror = function() {
+            document.getElementById('busuanzi_container_site_pv').innerText = "你是第114514个，太臭了，不让你给星空喵AC~";
+        };
+
+        script.src = url;
+        document.head.appendChild(script);
+    }
+</script>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -47,10 +61,13 @@ text-align: center;
     <p>你可以随便地膜星空喵哦！</p>
     <p>不努力就会变成星空喵的玩物哦！</p>
     <img src="https://711lxsky.cn/upload/711lxsky.cn/image/20231123/20231123221303_27392.png" alt="星空喵被晨曦拖出去艾草了">
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <span id="busuanzi_container_site_pv">你是第<span id="busuanzi_value_site_pv"></span>个让星空喵AC的哦！</span>
-    
     <p>
+        <span id="busuanzi_container_site_pv">你是第<span id="busuanzi_value_site_pv"></span>个让星空喵AC的哦！</span>
+    </p>
+    <script>
+        loadScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', function() {
+        });
+    </script>
         <a href="https://codeforces.com" target="_blank">去 Codeforces 补题</a>
     </p>
     <p>
